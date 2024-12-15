@@ -53,6 +53,9 @@ body{
     cursor: pointer;
     opacity: 0.9;
 }
+.navbar_s4{
+    display:none;
+}
 .menu{
     display: flex;
     flex-direction: column;
@@ -314,3 +317,28 @@ body{
     gap: 40;
     justify-content: space-around;
 }
+@media screen and (max-width:800px){
+    body{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:600px)
+{
+    .award_image img{
+        flex-basis: 40%;
+    }
+    .experience_image img{
+        flex-basis: 40%;
+    }
+    .image_explore img{
+        -ms-flex-align: stretch;
+    }
+    .menu_s1,.menu_s2,.menu_s3{
+        display: none;
+    }
+    .navbar_s2,.navbar_s3{
+        display: none;
+    }
+    .navbar_s4{
+        display:block;
+    }
